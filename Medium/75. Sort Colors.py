@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         """
@@ -17,5 +20,3 @@ class Solution:
             else:
                 nums[mid], nums[high] = nums[high], nums[mid]
                 high -= 1
-
-        
